@@ -1,6 +1,6 @@
 const db_broker = require('./broker')
 
-module.exports._ROUTES = (app) => {
+module.exports._ROUTES = app => {
 
     // DB Routes
     /* SELECT ALL (GET)*/
@@ -18,7 +18,7 @@ module.exports._ROUTES = (app) => {
     )
 
     /* INSERT (POST) */
-    app.post('/api/:table', (req,res) =>
+    app.post('/api/:table', (req, res) =>
         db_broker.Insert(req.params.table, req.body)
             .then(results => res.send(results))
             .catch(err => res.send(err))
@@ -32,7 +32,7 @@ module.exports._ROUTES = (app) => {
     )
 
     /* DELETE (DELETE) */
-    app.delete('/api/:table/:prop/:val', (req,res) =>
+    app.delete('/api/:table/:prop/:val', (req, res) =>
         db_broker.Delete(req.params.table, req.params.prop, req.params.val)
             .then(results => res.send(results))
             .catch(err =>res.send(err))
