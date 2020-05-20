@@ -1,12 +1,12 @@
 {
-  "name": "testproject",
+  "name": "to-do",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "scripts": {
     "start:dev": "env-cmd -f ./.dev.env nodemon main.js"
   },
-  "author": "",
+  "author": "jardon",
   "license": "ISC",
   "dependencies": {
     "@material-ui/core": "^4.9.14",
