@@ -1,4 +1,4 @@
-const db_broker = require('./db_broker')
+const db_broker = require('./broker')
 
 module.exports._ROUTES = (app) => {
 
