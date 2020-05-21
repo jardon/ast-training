@@ -43,6 +43,13 @@ git clone https://gitlab.com/jardon/ast-training.git /path/to/desired/destinatio
 ```
 **__NOTE:__** You can omit the path if you want to clone it to the current directory
 
+### Configure MySQL
+Add the following information to `server/.dev.env` so that the server can connect to the database.
+```
+MYSQL_USER=<username>
+MYSQL_PASSWORD=<password>
+```
+
 ### Run Instance
 ```bash
 cd /path/to/cloned/repo
